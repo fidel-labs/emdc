@@ -53,7 +53,7 @@
     "versionPublish": "5.3.10",
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "4atpfxowav",
+    "mbrsiteDomain": "tpmrb2xabq",
     "robotsSwitcher": true,
     "sitemapSwitcher": true,
     "sitemapSwitcherAuto": "on",
@@ -62,7 +62,7 @@
     "gdpr": false,
     "publishChangesOnly": true,
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
-    "chatbutton": false
+    "chatbutton": {}
   },
   "pages": {
     "index.html": {
@@ -787,25 +787,6 @@
                 "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-warning\" data-app-placeholder=\"Type Text\" href=\"about-us.html\" data-toolbar=\"-mbrBtnMove\">LEARN MORE</a> "
               },
               {
-                "image": "@PROJECT_PATH@/assets/images/kaolin-site-728x468.jpeg",
-                "active": true,
-                "showButtons": true,
-                "showText": true,
-                "showTitle": true,
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "customStyle1": "display-1",
-                "customStyle2": "display-5",
-                "customStyle3": "display-4",
-                "alt": "",
-                "title": "",
-                "textTitle": "Introducing Ethiopian Minerals",
-                "overlay": false,
-                "contentAlign": "center",
-                "text": "Image: Bombawuha Kaolin Open Pit Mine",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-warning\" data-app-placeholder=\"Type Text\" href=\"about-us.html\" data-toolbar=\"-mbrBtnMove\">LEARN MORE</a> "
-              },
-              {
                 "image": "@PROJECT_PATH@/assets/images/photo-2022-11-02-16.42.33-1280x720.jpeg",
                 "active": false,
                 "showButtons": true,
@@ -822,6 +803,25 @@
                 "overlay": false,
                 "contentAlign": "center",
                 "text": "Image: Kenticha Tantalum Tailing Dam",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-warning\" data-app-placeholder=\"Type Text\" href=\"about-us.html\" data-toolbar=\"-mbrBtnMove\">LEARN MORE</a> "
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/kaolin-site-728x468.jpeg",
+                "active": true,
+                "showButtons": true,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "alt": "",
+                "title": "",
+                "textTitle": "Introducing Ethiopian Minerals",
+                "overlay": false,
+                "contentAlign": "center",
+                "text": "Image: Bombawuha Kaolin Open Pit Mine",
                 "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-warning\" data-app-placeholder=\"Type Text\" href=\"about-us.html\" data-toolbar=\"-mbrBtnMove\">LEARN MORE</a> "
               },
               {
