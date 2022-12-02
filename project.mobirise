@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "products.html",
+    "currentPage": "about-us.html",
     "theme": {
       "name": "industrym4",
       "title": "IndustryM4",
@@ -1909,82 +1909,6 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "a:link": {
-              "text-decoration": "none"
-            },
-            ".align-left": {
-              "@media (max-width: 767px)": {
-                "text-align": "center"
-              }
-            },
-            ".icon-transition span": {
-              "color": "#f6f4f2",
-              "display": "block",
-              "height": "2.6em",
-              "line-height": "2.6em",
-              "& when (@iconsCircle)": {
-                "border-radius": "50%",
-                "border": "2px solid @circleColor",
-                "&:hover": {
-                  "background-color": "@circleHover",
-                  "color": "#f6f4f2 !important"
-                }
-              },
-              "width": "2.6em",
-              "-webkit-transition": "all 0.3s ease-out 0s",
-              "transition": "all 0.3s ease-out 0s",
-              "font-size": "14px",
-              "&:hover": {
-                "color": "@primaryColor"
-              }
-            },
-            ".social-media": {
-              "display": "flex",
-              "@media (max-width: 767px)": {
-                "justify-content": "center !important"
-              },
-              "ul": {
-                "margin": "0",
-                "padding": "0",
-                "margin-bottom": "8px",
-                "li": {
-                  "padding": "4px",
-                  "display": "inline-block"
-                }
-              }
-            },
-            ".content-text,.inner-text": {
-              "color": "#f6f4f2",
-              "text-align": "left"
-            },
-            ".hidden": {
-              "visibility": "visible !important"
-            }
-          },
-          "_name": "footer2",
-          "_customHTML": "<section class=\"footer2\" group=\"Footers\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"SocialLikes,Socicon\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" always-bottom global once=\"footers\">\n\n  <mbr-parameters>\n  <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n      <input type=\"checkbox\" title=\"Show Copyright\" name=\"showText\" checked>\n      <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n      <select title=\"Icons\" name=\"iconsCount\" condition=\"showIcons\">\n          <option value=\"1\">1</option>\n          <option value=\"2\">2</option>\n          <option value=\"3\">3</option>\n          <option value=\"4\">4</option>\n          <option value=\"5\">5</option>\n          <option value=\"6\" selected>6</option>\n          <option value=\"7\">7</option>\n      </select>\n      <input type=\"checkbox\" title=\"Icons Rounded\" name=\"iconsCircle\" condition=\"showIcons\">\n      <input type=\"color\" title=\"Circle Color\" name=\"circleColor\" value=\"#ffffff\" condition=\"iconsCircle\">\n      <input type=\"color\" title=\"Circle Hover\" name=\"circleHover\" value=\"#ff9966\" condition=\"iconsCircle\">\n      <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" consition=\"showIcons && showText\">\n\n      <fieldset type=\"background\" name=\"bg\" parallax>\n          <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\" parallax>\n          <input type=\"color\" title=\"Background Color\" value=\"#1d1e22\" selected>\n          <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n      </fieldset>\n      <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n      <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n      <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n  <!-- End block parameters -->\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n  </div>\n     <div class=\"container text-center\">\n         <div class=\"row justify-content-space-between\">\n           <div class=\"col-md-6 col-sm-12\" mbr-if=\"showText\" mbr-class=\"{'order-2 align-right': reverseContent, 'align-left' : !reverseContent}\">\n               <h3 class=\"inner-text mbr-fonts-style content-text\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".content-text,.inner-text\">© Copyright 2022 Ethiopian Minerals Corporation<br>Made with love by <a href=\"https://www.fidel-labs.co\" class=\"text-primary\" target=\"_blank\">Fidel Labs</a>&nbsp;and <a href=\"mailto:madocommunication@gmail.com\" class=\"text-primary\">Mado Communications&nbsp;</a>&nbsp;</h3>\n           </div>\n           <div class=\"social-media col-md-6 col-sm-12\" mbr-class=\"{'justify-content-end' : !reverseContent && showText, 'justify-content-start' : reverseContent && showText}\" mbr-if=\"showIcons\">\n                <ul>\n                    <li mbr-if=\"iconsCount > 0\">\n                      <a class=\"icon-transition\" href=\"https://www.facebook.com/Mobirise/\" target=\"_blank\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 1\">\n                      <a class=\"icon-transition\" href=\"https://www.instagram.com/mobirise/\" target=\"_blank\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 2\">\n                      <a class=\"icon-transition\" href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-twitter socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 3\">\n                      <a class=\"icon-transition\" href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-behance socicon\"></span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 4\">\n                      <a class=\"icon-transition\" href=\"https://vimeo.com/mobirise\" target=\"_blank\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-vimeo socicon\" style></span>\n                      </a>\n                    </li>\n                     <li mbr-if=\"iconsCount > 5\">\n                      <a class=\"icon-transition\" href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\" style></span>\n                      </a>\n                    </li>\n                     <li mbr-if=\"iconsCount > 6\">\n                      <a class=\"icon-transition\" href=\"#\" target=\"_blank\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-rss socicon\" style></span>\n                      </a>\n                    </li>\n                 </ul>\n            </div>\n  </div>\n     </div>\n\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_isUserblock": true,
-          "_sourceTheme": "connectm4",
-          "_cid": "scfzXKU5UZ",
-          "_anchor": "footer2-2",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         },
         {
